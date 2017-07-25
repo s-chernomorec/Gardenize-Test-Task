@@ -204,11 +204,27 @@
   }
 }
 
+//  questionPage
+
+.back-to-questions-button {
+  margin-top: $header-height + 12px;
+  margin-bottom: 12px;
+
+  a {
+    display: inline-block;
+    height: 32px;
+    padding: 0 20px;
+    background-color: $link-blue;
+    border-radius: 4px;
+    line-height: 32px;
+    color: #fff;
+  }
+}
+
 //  questionPage -> QuestionBlock
 
 .question-block {
   width: 100%;
-  margin-top: $header-height + 20px;
   border: 1px solid #aaa;
   font: 14px "Open Sans", sans-serif;
 

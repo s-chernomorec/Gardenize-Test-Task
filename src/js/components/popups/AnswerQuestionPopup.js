@@ -93,7 +93,8 @@ AnswerQuestionPopup.propTypes = {
   questionID: PropTypes.number.isRequired,
   answerID: PropTypes.number.isRequired,
   popupIsActive: PropTypes.bool.isRequired,
-  closePopup: PropTypes.func.isRequired
+  closePopup: PropTypes.func.isRequired,
+  dispatch: PropTypes.func.isRequired
 }
 
 export default connect()(AnswerQuestionPopup);

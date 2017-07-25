@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 
 import Header from '../common/Header';
+import {NavLink} from 'react-router-dom';
 import QuestionBlock from './QuestionBlock';
 import AnswersBlock from './AnswersBlock';
 import AnswerQuestionPopup from '../popups/AnswerQuestionPopup';
@@ -50,6 +51,9 @@ class QuestionPage extends Component {
     return (
       <div className="wrapper">
         <Header openAskQuestionPopup={this.openAskQuestionPopup} />
+        <div className="back-to-questions-button">
+          <NavLink to='/' exact>Back to Questions</NavLink>
+        </div>
         <QuestionBlock
           title={question.title}
           text={question.text}

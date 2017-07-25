@@ -18,6 +18,7 @@ InputWithLabel.defaultProps = {
 
 InputWithLabel.propTypes = {
   name: PropTypes.string.isRequired,
+  customClass: PropTypes.string,
   value: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired
 }

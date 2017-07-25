@@ -74,7 +74,8 @@ HomePage.propTypes = {
       date: PropTypes.instanceOf(Date).isRequired
     })
   ).isRequired,
-  filter: PropTypes.string.isRequired
+  filter: PropTypes.string.isRequired,
+  setFilter: PropTypes.func.isRequired
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(HomePage);

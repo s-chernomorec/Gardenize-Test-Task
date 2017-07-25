@@ -27,7 +27,8 @@ const PopupFrame = ({children, title, closePopup}) => {
 
 PopupFrame.propTypes = {
   title: PropTypes.string.isRequired,
-  closePopup: PropTypes.func.isRequired
+  closePopup: PropTypes.func.isRequired,
+  children: PropTypes.node
 };
 
 export default PopupFrame;

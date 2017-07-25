@@ -98,7 +98,8 @@ class AskQuestionPopup extends Component {
 
 AskQuestionPopup.propTypes = {
   popupIsActive: PropTypes.bool.isRequired,
-  closePopup: PropTypes.func.isRequired
+  closePopup: PropTypes.func.isRequired,
+  dispatch: PropTypes.func.isRequired
 };
 
 export default connect()(AskQuestionPopup);
